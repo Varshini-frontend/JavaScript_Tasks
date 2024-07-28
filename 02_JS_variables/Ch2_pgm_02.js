@@ -3,6 +3,12 @@
 var score;
 score = 100;
 
+console.log(score);
+
+score = 200;
+console.log(score);
+
+
 /* Further Adventures
  *
  * 1) Click Run on the JS Bin Console panel.
