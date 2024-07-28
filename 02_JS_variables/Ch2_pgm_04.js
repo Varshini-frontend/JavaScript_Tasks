@@ -1,11 +1,12 @@
 // Variables vary
 
-var score;
-score = 100;
+var score = 100;
 console.log(score);
 
-score = 150;
+var score2 = 150;
 console.log(score);
+console.log("new value of score2 is " + score2);
+
 
 
 
