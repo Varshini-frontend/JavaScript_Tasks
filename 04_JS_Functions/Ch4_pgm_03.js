@@ -1,34 +1,54 @@
 // Adding tax to find the total cost
 
-var sale1;
-var sale2;
-var sale3;
+var buildPlanet;
+var getPlanetInfo;
+var planet1;
+var planet2;
 
-sale1 = { price: 140, taxRate: 15 };
-sale2 = { price: 40, taxRate: 10 };
-sale3 = { price: 120, taxRate: 20 };
+buildPlanet = function (name, position, type, radius, rank) {
+    return {
+        name: name,
+        position: position,
+        type: type,
+        radius: radius,
+        sizeRank: rank
+    };
+};
 
-sale1.tax = sale1.price * sale1.taxRate / 100;
-sale2.tax = sale2.price * sale2.taxRate / 100;
-sale3.tax = sale3.price * sale3.taxRate / 100;
+getPlanetInfo = function (planet) {
+    return planet.name.toUpperCase() + ": planet " + planet.position;
+};
 
-sale1.total = sale1.price + sale1.tax;
-sale2.total = sale2.price + sale2.tax;
-sale3.total = sale3.price + sale3.tax;
+planet1 = buildPlanet("Jupiter", 5, "Gas Giant", 69911, 1);
+planet2 = buildPlanet("Neptune", 8, "Ice Giant", 24622, 4);
 
-console.log("price = $" + sale1.price);
-console.log("tax @ " + sale1.taxRate + "% = $" + sale1.tax);
-console.log("total cost = $" + sale1.total);
+console.log(getPlanetInfo(planet1));
+console.log(getPlanetInfo(planet2));
 
-console.log("price = $" + sale2.price);
-console.log("tax @ " + sale2.taxRate + "% = $" + sale2.tax);
-console.log("total cost = $" + sale2.total);
+// For cars
+var buildCar;
+var getCarInfo;
+var car1;
+var car2;
 
-console.log("price = $" + sale3.price);
-console.log("tax @ " + sale3.taxRate + "% = $" + sale3.tax);
-console.log("total cost = $" + sale3.total);
+buildCar = function (name, type, kilometer, country) {
+    return {
+        name: name,
+        type: type,
+        kilometer:kilometer,
+        country:country
+    };
+};
 
+getCarInfo = function (car) {
+    return car.name.toUpperCase() + ": car " + car.type;
+};
 
+car1 = buildCar("VolksWagon", "Taigun", 140, "USA");
+car2 = buildCar("Tata", "Harrier", 170, "India");
+
+console.log(getCarInfo(car1));
+console.log(getCarInfo(car2));
 
 
 /* Further Adventures
