@@ -13,7 +13,6 @@ var single words only;
 var yield;
 
 
-
 /* Further Adventures
  *
  * 1) Take a look at the errors in the
