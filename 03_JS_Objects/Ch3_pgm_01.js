@@ -9,6 +9,14 @@ bookAuthor = "J. R. R. Tolkien";
 console.log(bookTitle + " by " + bookAuthor);
 
 
+var book2Title;
+var book2Author;
+
+bookTitle = "Romeo and Juliet";
+bookAuthor = "William Shakespeare";
+
+console.log(bookTitle + " by " + bookAuthor);
+
 
 /* Further Adventures
  *
