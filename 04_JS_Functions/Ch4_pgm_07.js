@@ -1,17 +1,21 @@
 // Using the findTotal function to display a calculation
 
-var number1 = 1000;
-var number2 = 66;
-var result;
-var findTotal;
+var planet = "Jupiter";
+var bigPlanet = planet.toUpperCase();
+var getBig = function (str) {
+    return str.toUpperCase();
+};
+console.log(planet + " becomes " + bigPlanet);
 
-findTotal = function () {
-	result = number1 + number2;
+var getSmall = function (str) {
+    return str.toLowerCase();
 };
 
-findTotal();
+// Testing getSmall function
+var country = "UNITED STATES";
+var smallCountry = getSmall(country);
+console.log(country + " becomes " + smallCountry);
 
-console.log(number1 + " + " + number2 + " = " + result);
 
 
 
