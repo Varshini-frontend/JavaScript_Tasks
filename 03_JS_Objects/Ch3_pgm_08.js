@@ -10,6 +10,19 @@ book = {
 
 console.log(book.title);
 console.log(book.author);
+console.log(book.published);
+
+
+var book2 = {
+	title     : "War and Peace",
+	author    : "Leo Tolstoy",
+	published : 1957
+}
+console.log(book2.title);
+console.log(book2.author);
+console.log(book2.published);
+
+
 
 
 
