@@ -4,7 +4,7 @@ var getMessage;
 var response;
 
 getMessage = function () {
-    return "I’m going on an adventure!";
+    return "Hello, Have a great a day!";
 };
 
 response = getMessage();
