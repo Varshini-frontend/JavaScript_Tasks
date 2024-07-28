@@ -41,6 +41,32 @@ showMovieInfo();
 movie = movie3;
 showMovieInfo();
 
+var question1 = {
+    question: "What is the capital of France?",
+    options: ["1. Berlin", "2. Madrid", "3. Paris", "4. Rome"]
+};
+var question2 = {
+    question: "Which planet is known as the Red Planet?",
+    options: ["1. Earth", "2. Mars", "3. Jupiter", "4. Venus"]
+};
+
+var showQuizQuestion = function(){
+    console.log("Quiz Question: " + quiz.question);
+    console.log("------------------------------");
+    for (var i = 0; i < quiz.options.length; i++) {
+        console.log(quiz.options[i]);
+}
+};
+var quiz;
+quiz = question1;
+showQuizQuestion();
+
+quiz = question2;
+showQuizQuestion();
+
+
+
+
 
 
 /* Further Adventures
