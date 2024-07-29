@@ -26,7 +26,6 @@ var report = getVisitorReport(visitors, 2);
 console.log(report);
 
 
-
 /* Further Adventures
  *
  * 1) Run the report for Friday.
