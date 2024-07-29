@@ -17,6 +17,7 @@ const doSomething = callback => {
   doSomething(callback);
 
 
+
 // after 2 seconds it will print
 // It did not go well
 
